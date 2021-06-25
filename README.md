@@ -1,4 +1,4 @@
-# openvpn
+# Add and Remove Users from OpenVPN
 Add &amp; Remove OpenVPN Users with Ease
 
 ## Programs needed
@@ -28,3 +28,6 @@ sudo ./remuser.sh Bob_Builder
 ~~~bash
 sudo ./adduser.sh list
 ~~~
+
+### Thoughts and Prayers
+I hope I didn't bork anything while converting it to be more easily modified by other users.
