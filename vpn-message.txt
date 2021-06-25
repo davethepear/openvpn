@@ -1,0 +1,30 @@
+Keep this file SAFE, it's very important to do so!
+
+Download OpenVPN here:
+Everything but Apple
+https://openvpn.net/community-downloads/
+
+Apple... https://openvpn.net/vpn-server-resources/connecting-to-access-server-with-macos/
+
+http://www.linncountykansas.com/vpn-windows.html
+For help connecting to vpn use the link above... or google it.
+
+open explorer (not Internet Explorer)
+put \\192.168.1.100 into the address bar
+username & password is user & user
+it's probably best if you map the drives (Windows)
+right click on Composition, Map as Network Drive...
+        Composition > N
+        Distribution > O
+        Public > P
+        Proofing > Q
+        "Big Drive" > R
+        Printshop > S
+
+The printer driver is here:
+R:\Programs & Drivers\LJM607-M608-M609_Full_WebPack_43.3.2511.exe
+
+it'll get mad and say it can't find the printer, then it will ask for
+the IP of the printer: 192.168.1.221
+
+I don't know if you'll need other printers, if you do, let Jackie know.
