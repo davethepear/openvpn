@@ -1,5 +1,6 @@
 #!/bin/bash
-
+vpndir=/home/administrator/VPN
+easyrsa=EasyRSA-3.0.8
 if readlink /proc/$$/exe | grep -qs "dash"; then
 	echo "This script needs to be run with bash, not sh! Bash it real good!"
 	exit 1
@@ -11,7 +12,7 @@ if [[ "$EUID" -ne 0 ]]; then
 fi
 if [ "$1" = "list" ]; then
 	echo "A list of users:"
-	ls /home/administrator/VPN/client-configs/files/
+	ls $vpndir/client-configs/files/
 	exit
 fi
 if [ "$1" = "" ]; then
@@ -20,16 +21,16 @@ if [ "$1" = "" ]; then
 	echo "Eg: sudo ./remvpn.sh Bob_Builder"
 	exit
 else
-	cd /home/administrator/VPN/EasyRSA-3.0.8/
+	cd $vpndir/$easyrsa/
 	./easyrsa revoke $1
 	# Deletes the bad hombre, bigly!
 	./easyrsa gen-crl
-	rm /home/administrator/VPN/client-configs/files/$1.ovpn
-	rm /home/administrator/VPN/client-configs/keys/$1.crt
-	rm /home/administrator/VPN/client-configs/keys/$1.key
+	rm $vpndir/client-configs/files/$1.ovpn
+	rm $vpndir/client-configs/keys/$1.crt
+	rm $vpndir/client-configs/keys/$1.key
         #copies the gfy key to ovpn
         mv /etc/openvpn/crl.pem /etc/openvpn/crl.pem.bk
-        mv /home/administrator/VPN/EasyRSA-3.0.8/pki/crl.pem /etc/openvpn/
+        mv $vpndir/$easyrsa/pki/crl.pem /etc/openvpn/
 	cd ~
 	echo ""
 	echo "Client $1 deleted!"
