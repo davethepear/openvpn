@@ -2,7 +2,7 @@
 # Put your VPN files directory here, without closing slash /. I recommend one like the one below.
 # the client-configs directory should be within this directory!
 vpndir=/home/administrator/VPN
-# EasyRSA Version - It will be the same as the directory, no /
+# EasyRSA Version - It will be the same as the directory, no /. I hope it's in the vpn directory!
 easyrsa=EasyRSA-3.0.8
 
 if readlink /proc/$$/exe | grep -qs "dash"; then
