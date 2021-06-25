@@ -11,20 +11,20 @@ For help connecting to vpn use the link above... or google it.
 
 open explorer (not Internet Explorer)
 put \\192.168.1.100 into the address bar
-username & password is user & user
+username & password is user & password
 it's probably best if you map the drives (Windows)
 right click on Composition, Map as Network Drive...
-        Composition > N
-        Distribution > O
-        Public > P
-        Proofing > Q
-        "Big Drive" > R
-        Printshop > S
+        This > N
+        That > O
+        Them > P
+        Those > Q
+        These > R
+        Stuff > S
 
 The printer driver is here:
-R:\Programs & Drivers\LJM607-M608-M609_Full_WebPack_43.3.2511.exe
+S:\Drivers\LJM607-M608-M609_Full_WebPack_43.3.2511.exe
 
-it'll get mad and say it can't find the printer, then it will ask for
-the IP of the printer: 192.168.1.221
+It'll get mad and say it can't find the printer, then it will ask for
+the IP of the printer: 192.168.1.123
 
-I don't know if you'll need other printers, if you do, let Jackie know.
+I don't know if you'll need other printers, if you do, let me know.
