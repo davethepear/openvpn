@@ -38,7 +38,7 @@ else
         cd $vpndir/$easyrsa/
         ./easyrsa build-client-full $1 nopass
         # Generates the custom client.ovpn
-        cp $vpndir/client-configs/client-common.txt $vpndir/client-configs/files/$1.ovpn
+        cp $vpndir/client-common.txt $vpndir/client-configs/files/$1.ovpn
         echo "<ca>" >> $vpndir/client-configs/files/$1.ovpn
         cat $vpndir/$easyrsa/pki/ca.crt >> $vpndir/client-configs/files/$1.ovpn
         echo "</ca>" >> $vpndir/client-configs/files/$1.ovpn
