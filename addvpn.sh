@@ -59,6 +59,6 @@ fi
 if [ "$2" = "none" ]; then
         echo "Client $1 added, configuration is available here: $vpndir/client-configs/files/$1.ovpn"
         else
-        echo "Client $1 added, emailing client files, configuration is available at" $vpndir/client-configs/files/$1.ovpn"
+        echo "Client $1 added, emailing client files, configuration is available at $vpndir/client-configs/files/$1.ovpn"
         mutt -s "VPN for $1" -a "$vpndir/client-configs/files/$1.ovpn" -c $2 -b $email < $vpndir/vpn-message.txt
 fi
