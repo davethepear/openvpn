@@ -8,7 +8,7 @@ I've gotten lazy and https://github.com/Nyr/openvpn-install is much better...
 - mutt (if you want to use email functionality)
 - postfix (if you want the email functionality to work)
 
-Instructions on installing OpenVPN and Clients: http://www.linncountykansas.com/install_openvpn_server.html
+Instructions on installing OpenVPN and Clients: http://www.paolaks.net/vpn-server.html
 
 ## Editing
 - Edit `addvpn.sh` and `remvpn.sh` to change `vpndir` and `easyrsa` near the top.
