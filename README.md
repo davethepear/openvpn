@@ -1,3 +1,5 @@
+I've gotten lazy and https://github.com/Nyr/openvpn-install is much better...
+
 # Add &amp; Remove OpenVPN Users with Ease
 
 ## Programs needed
